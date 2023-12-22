@@ -30,15 +30,45 @@
             outline: 1px solid #cccccc;
             outline-offset: -1px;
         }
+
+        .color-block {
+            padding: 1rem;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .red {
+            background: red;
+        }
+
+
+        .color-block h1 {
+            color: #ffffff;
+            font-size: 2rem;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0 1rem;
+            padding: 1.5rem 0;
+        }
     </style>
 
 </head>
 
 <body>
+    <div class="color-block blue">
+        <h1>CONTENT BEFORE IFRAME</h1>
+    </div>
+
     <div class="iframe-wrapper">
         <iframe width='100%' scrolling='no' class='en-iframe'
             data-src='https://protect.worldwildlife.org/page/61117/donate/1' frameborder='0' allowfullscreen=''
             style='display:none' allow='autoplay; encrypted-media' allowpaymentrequest="true" crossorigin></iframe>
+    </div>
+
+    <div class="color-block red">
+        <h1>CONTENT AFTER IFRAME</h1>
     </div>
 
     <script>
